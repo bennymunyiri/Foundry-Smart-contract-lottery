@@ -19,9 +19,8 @@ foundry
 
 
  ## forge test
-or
 
-forge test --fork-url $SEPOLIA_RPC_URL
+    forge test --fork-url $SEPOLIA_RPC_URL
 Test Coverage
 forge coverage
 Deployment to a testnet or mainnet
