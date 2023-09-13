@@ -8,15 +8,14 @@ foundry
 
  # Usage
  ## Start a local Node
- ```bash
-   make anvil
+       make anvil
 # Library
 ## If you're having a hard time installing the chainlink library, you can optionally run this command.
-forge install smartcontractkit/chainlink-brownie-contracts@0.6.1 --no-commit
+    forge install smartcontractkit/chainlink-brownie-contracts@0.6.1 --no-commit
 
 # Deploy
 ## This will default to your local node. You need to have it running in another terminal in order for it to deploy.
-make deploy
+    make deploy
 
 Deploy - Other Network
 See below
