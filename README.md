@@ -17,17 +17,6 @@ foundry
 ## This will default to your local node. You need to have it running in another terminal in order for it to deploy.
     make deploy
 
-Deploy - Other Network
-See below
-
-## Testing
-We talk about 4 test tiers in the video.
-
-Unit
-Integration
-Forked
-Staging
-This repo we cover #1 and #3.
 
  ## forge test
 or
@@ -48,7 +37,7 @@ Optionally, add your ETHERSCAN_API_KEY if you want to verify your contract on Et
 Head over to faucets.chain.link and get some testnet ETH. You should see the ETH show up in your metamask.
 
 ## Deploy
-make deploy ARGS="--network sepolia"
+    make deploy ARGS="--network sepolia"
 This will setup a ChainlinkVRF Subscription for you. If you already have one, update it in the scripts/HelperConfig.s.sol file. It will also automatically add your contract as a consumer.
 
 Register a Chainlink Automation Upkeep
@@ -61,17 +50,17 @@ After deploying to a testnet or local net, you can run the scripts.
 
 Using cast deployed locally example:
 
-cast send <RAFFLE_CONTRACT_ADDRESS> "enterRaffle()" --value 0.1ether --private-key <PRIVATE_KEY> --rpc-url $SEPOLIA_RPC_URL
+    cast send <RAFFLE_CONTRACT_ADDRESS> "enterRaffle()" --value 0.1ether --private-key <PRIVATE_KEY> --rpc-url $SEPOLIA_RPC_URL
 or, to create a ChainlinkVRF Subscription:
 
-make createSubscription ARGS="--network sepolia"
+    make createSubscription ARGS="--network sepolia"
 ## Estimate gas
 You can estimate how much gas things cost by running:
 
- forge snapshot
+     forge snapshot
 And you'll see an output file called .gas-snapshot
 
 ## Formatting
 To run code formatting:
 
-forge fmt
+    forge fmt
